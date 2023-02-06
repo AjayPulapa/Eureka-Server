@@ -11,6 +11,6 @@ RUN mvn clean install -DskipTests
 #Starting...
 FROM openjdk:11
 VOLUME /tmp
-LABEL maintainers="miracle.com"
-ADD target/eurekaserver-0.0.1-SNAPSHOT.jar server-docker.jar
+LABEL maintainers="DurgaRao Gopu"
+COPY --from=build /opt/app/target/*.jar server-docker.jar
 ENTRYPOINT ["java", "-jar", "server-docker.jar"]
