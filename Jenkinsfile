@@ -8,6 +8,10 @@ node
   {
     sh "mvn clean"
     sh "mvn install"
-    Maven installed successfully
+    sh "ls"
+  }
+  stage ("Docker Build")
+  {
+   sh "docker build -t eureka-server-image ."
   }
 }
