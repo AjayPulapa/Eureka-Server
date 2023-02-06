@@ -5,5 +5,6 @@ node{
    stage ("Maven Clean&Install"){
     sh "cd "/var/lib/jenkins/workspace/Eureka-Server"
      sh "mvn clean"
+     sh "mvn install"
   }
 }
