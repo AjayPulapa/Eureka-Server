@@ -3,7 +3,7 @@ node{
     git branch: 'master', url: 'https://github.com/DurgaRaoGopu/Eureka-Server.git'
   }
    stage ("Maven Clean&Install"){
-    sh "apt get update"
-     sh "apt install maven"
+    sh "cd "/var/lib/jenkins/workspace/Eureka-Server"
+     sh "mvn clean"
   }
 }
