@@ -14,4 +14,8 @@ node
   {
    sh "docker build -t eureka-server-image ."
   }
+  stage ("Docker Run")
+  {
+   sh "docker run -d -p 8787:8761 --name eureka-server-container eureka-server-image" 
+  }
 }
