@@ -2,7 +2,7 @@ node
 {
   stage("Git clone")
   {
-    git branch : "eureka-server", url : "https://github.com/DurgaRaoGopu/Claims-KT.git"
+    git branch : "eureka-server", url : "https://github.com/AjayPulapa/Eureka-Server.git"
   }
   stage ("Maven clean&install")
   {
