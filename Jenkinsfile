@@ -4,11 +4,11 @@ node
   {
     git branch : "eureka-server", url : "https://github.com/AjayPulapa/Eureka-Server.git"
   }
-  stage ("Maven clean&install")
-  {
-    sh "mvn clean"
-    sh "mvn install"
-  }
+//   stage ("Maven clean&install")
+//   {
+//     sh "mvn clean"
+//     sh "mvn install"
+//   }
   stage ("Docker Build")
   {
    sh "docker build -t eureka-server-image ."
